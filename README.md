@@ -1,0 +1,2 @@
+# lagou
+通过selenium动态获取cookie爬取30页拉勾岗位信息和公司信息
