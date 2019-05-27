@@ -267,12 +267,12 @@ if __name__ == '__main__':
     print('开始采集页面信息')
     loop.run_until_complete(asyncio.wait(tasks))
 
-    # 启动一个进程池采集公司信息
+    # 采集公司信息
     loop_company = asyncio.get_event_loop()
     print('开始采集公司信息')
     loop_company.run_until_complete(get_company_info(companies))
 
-    # 启动一个进程池采集岗位信息
+    # 采集岗位描述
     loop_work = asyncio.get_event_loop()
     print('开始采集岗位信息')
     loop_work.run_until_complete(get_company_info(works))
